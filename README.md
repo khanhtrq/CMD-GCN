@@ -1,34 +1,30 @@
 # Categorical Multi-Domain Graph Convolutional Network (CMD-GCN) for Plasmodium Life Cycle Development Classification
 
-Repository for the the thesis title "Multi-Domain Information Fusion for Plasmodium Life Cycle Development Classification". Full version of the thesis is available [here](https://husteduvn-my.sharepoint.com/:b:/g/personal/khanh_tq190085_sis_hust_edu_vn/EagW9zjNSihGo7q9DetTMrEBnEKpkYsc7VJVKMSVaQdJUg?e=5yziRO). 
-
-The repository was developed based on [MMPreTrain](https://github.com/open-mmlab/mmpretrain), with customized modules for MDIF Implementation. It is also available in [github](https://github.com/khanhtran2101/Multi_Domain_Learning_Malaria_Parasite).
+Repository for the the paper "CMD-GCN: Categorical Multi-domain Graph Convolutional Network for Plasmodium Development Stage Recognition". The paper is available [here]([https://husteduvn-my.sharepoint.com/:b:/g/personal/khanh_tq190085_sis_hust_edu_vn/EagW9zjNSihGo7q9DetTMrEBnEKpkYsc7VJVKMSVaQdJUg?e=5yziRO](https://doi.org/10.1007/978-3-032-31936-4_10)). 
 
 ## Overall framework
 
-MDIF is a module placed on top of feature extractor to integrate information across domains. An agent node globally represents a whole domain in Domain-level and one class of one doamin in Class-level setting. Two ways of knowledge graph construction are proposed to represent relationship across domains for information fusion.
+CMD-GCN is a module placed on top of feature extractor using GCN to enhance feature representation by information integration across categories while preserve unique information of each category in each domain.
 
-![Framework with MDIF](figure/cmdgcn_framework.png)
+![Framework with MDIF](figure/cmdgcn_framework.jpg)
 
 ## Dataset
 
-We use three datasets for training, namely [BBBC041](https://bbbc.broadinstitute.org/BBBC041/), [IML Malaria](https://www.kaggle.com/datasets/qaziammararshad/iml-malaria/data), and Our Plasmodium. Our Plasmodium dataset is still in progress of being published. We keep you updated!
+We use three datasets for training, namely [BBBC041](https://bbbc.broadinstitute.org/BBBC041/), [IML Malaria](https://www.kaggle.com/datasets/qaziammararshad/iml-malaria/data), and RecoPlasmodiumV1.
 
 ## Experiment Design
 
 Two baselines and two approaches with MDIF are experimented:
  - Individual Training (baseline 1): model is trained on individual dataset without MDIF.
  - Joint Training (baseline 2): model is trained jointly on all datasets without MDIF.
- - MDIFDomain-level:modelistrainedjointly onall datasets with MDIFDomain
-level.
- - MDIF Class-level: model is trained jointly on all datasets with MDIF Class
-level.
+ - MDIF: model is trained jointly on all datasets with MDIF.
+ - CMD-GCN: model is trained jointly on all datasets with CMD-GCN.
 
 ## How to run experiment? 
 
 Some requirements for running environment includes: PyTorch 2.1.2, Torchvision 0.16.2, mmcv 2.1.0, mmengine
 
-A config file with specific settings, such as dataset and components of model, should be defined to run the experiments. Examples of training and evalution with MDIF Domain-level in Kaggle are shown as following.
+A config file with specific settings, such as dataset and components of model, should be defined to run the experiments. Examples of training and evalution with MDIF in Kaggle are shown as following.
 
 Training:
 ```shell
