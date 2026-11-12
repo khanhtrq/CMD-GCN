@@ -1,6 +1,6 @@
 # Categorical Multi-Domain Graph Convolutional Network (CMD-GCN) for Plasmodium Life Cycle Development Classification
 
-Repository for the the paper "CMD-GCN: Categorical Multi-domain Graph Convolutional Network for Plasmodium Development Stage Recognition". The paper is available [here]([https://husteduvn-my.sharepoint.com/:b:/g/personal/khanh_tq190085_sis_hust_edu_vn/EagW9zjNSihGo7q9DetTMrEBnEKpkYsc7VJVKMSVaQdJUg?e=5yziRO](https://doi.org/10.1007/978-3-032-31936-4_10)). 
+Repository for the the paper "CMD-GCN: Categorical Multi-domain Graph Convolutional Network for Plasmodium Development Stage Recognition". The paper is available [here](https://doi.org/10.1007/978-3-032-31936-4_10). 
 
 ## Overall framework
 
