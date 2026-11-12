@@ -1,4 +1,4 @@
-# Multi-Domain Information Fusion (MDIF) for Plasmodium Life Cycle Development Classification
+# Categorical Multi-Domain Graph Convolutional Network (CMD-GCN) for Plasmodium Life Cycle Development Classification
 
 Repository for the the thesis title "Multi-Domain Information Fusion for Plasmodium Life Cycle Development Classification". Full version of the thesis is available [here](https://husteduvn-my.sharepoint.com/:b:/g/personal/khanh_tq190085_sis_hust_edu_vn/EagW9zjNSihGo7q9DetTMrEBnEKpkYsc7VJVKMSVaQdJUg?e=5yziRO). 
 
@@ -8,7 +8,7 @@ The repository was developed based on [MMPreTrain](https://github.com/open-mmlab
 
 MDIF is a module placed on top of feature extractor to integrate information across domains. An agent node globally represents a whole domain in Domain-level and one class of one doamin in Class-level setting. Two ways of knowledge graph construction are proposed to represent relationship across domains for information fusion.
 
-![Framework with MDIF](figure/mdif_framework.png)
+![Framework with MDIF](figure/cmdgcn_framework.png)
 
 ## Dataset
 
